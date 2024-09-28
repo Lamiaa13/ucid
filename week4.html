@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UCID Validation Form</title>
+        <style>
+            input {
+                border: 1px solid dimgray;
+                padding: 8px;
+            }
+
+            button {
+                background-color: dimgray;
+                border: none;
+                color: white;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="ucidForm">
+            <input
+                type="text"
+                id="ucid"
+                name="ucid"
+                placeholder="Enter your UCID"
+                title="A UCID is a sequence of letters followed by zero to three digits"
+                required
+            />
+            <label for="ucid">UCID</label>
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
